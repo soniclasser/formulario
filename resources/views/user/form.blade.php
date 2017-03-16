@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
+        <div class="row" ng-app="myApp" ng-controller="formController">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-heading">Create User</div>
@@ -76,4 +76,17 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('scripts')
+<script>
+    angular.module('myApp',[]).controller('formController'['$scope',function ($scope) {
+
+        console.log('init angular');
+            }]);
+
+
+
+
+</script>
 @endsection
