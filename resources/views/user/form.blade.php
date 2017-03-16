@@ -80,7 +80,7 @@
 
 @section('scripts')
 <script>
-    angular.module('myApp',[]).controller('formController'['$scope',function ($scope) {
+    angular.module('myApp',[]).controller('formController',['$scope',function ($scope) {
 
         console.log('init angular');
             }]);
